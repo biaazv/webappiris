@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>WebApp Iris</title>
+		
+		<!-- JQuery -->
+		<script src="js/jquery-2.2.1.js"></script>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+		<!-- incluindo css -->
+		<link href="css/style.css" rel="stylesheet">
+
+	</head>
+
+	<body class="body-index">
+
+		<!--::VLIBRAS:-->
+		<script data-account="SwghdTpXGZ" src="https://cdn.userway.org/widget.js"></script>
+		<!--::VLIBRAS:-->
+
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container">
+
+				<% if(validacao.length > 0){ %>
+					<div class="alert alert-danger">
+						<strong>Atenção!</strong>
+						<ul>
+							<% for(var i = 0; i < validacao.length; i++) {%>
+								<li><%=validacao[i].msg%></li>
+							<% } %>
+						</ul>
+					</div>
+				<% } %>
+
+				<form class="form-inline form-entrar" action="/autenticar" method="post">
+					<div class="form-group">				
+						<input type="text" name="usuario" id="usuario" placeholder="Usuário" class="form-control" autocomplete="off" />
+						<input type="password" name="senha" id="senha" placeholder="Senha" class="form-control" />
+						<button type="submit" class="btn btn-success">Entrar</button>
+						<a href="cadastro"><button type="button" class="btn btn-info">Cadastro</button></a>
+					</div>
+				</form>
+			</div>
+			
+		</nav>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>íris</title>
+		<link rel="icon" href="img2/pin_ roxo.png">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- owl carousel CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<!-- font awesome CSS -->
+		<link rel="stylesheet" href="css/all.css">
+		<!-- flaticon CSS -->
+		<link rel="stylesheet" href="css/flaticon.css">
+		<link rel="stylesheet" href="css/themify-icons.css">
+		<!-- font awesome CSS -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<!-- swiper CSS -->
+		<link rel="stylesheet" href="css/slick.css">
+		<!-- style CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="Sobre.css">
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="Aplicativo.css">
+		<link rel="stylesheet" href="style2.css">
+	</head>
+	
+	<body>
+	
+		<div class="comousar">
+	
+			<section class="faq">
+				<h2>Publicando uma avaliação</h2>
+				<div class="accordion">
+					<div class="accordion-item">
+						<div class="item-header">
+							<h1 class="title">Preciso fazer um cadastro para fazer uma
+								avaliação?</h1>
+								<span class="icon" style="background-color:green
+								;">x</span>
+						</div>
+						<div class="accordion-ite">
+						  
+							<p class="text">
+								<div class="item-header">
+									<h1 class="title"></h1>
+									<span class="icon" style="background-color: red;">-</span>
+								</div>
+								
+							</p>
+						</div>
+						<p class="text" style="background-color: #882AA5; border-radius: 1,5%; color: aliceblue;">
+							Sim, para fazer avaliações deverá efetuar o cadastro em nosso Web site, pois sem ele sua
+							reclamação não será computada em nosso sistema.Por favor realizer o cadastro <a href="">aqui</a>
+						</p>
+					</div>
+	
+					<div class="accordion-item">
+						<div class="item-header">
+							<h1 class="title">Quem pode fazer avaliações?</h1>
+							<span class="icon" style="background-color:green
+							;">x</span>
+						</div>
+						<div class="accordion-ite">
+						  
+							<p class="text">
+								<div class="item-header">
+									<h1 class="title"></h1>
+									<span class="icon" style="background-color: red;">-</span>
+								</div>
+								
+							</p>
+						</div>
+						<p class="text" style="background-color: #882AA5; border-radius: 1,5%; color: aliceblue;">
+							Recomendamos que o avaliador possua uma relação de consumo ou comercial com o estabelecimento
+							avaliado, além disso, é necessário ser maior de 18 anos e com cadastro validado em nosso site
+						</p>
+					</div>
+	
+					<div class="accordion-item">
+						<div class="item-header">
+							<h1 class="title">Como fazer a avaliação?</h1>
+							 <span class="icon" style="background-color:green
+							;">x</span>
+						</div>
+						<div class="accordion-ite">
+						  
+							<p class="text">
+								<div class="item-header">
+									<h1 class="title"></h1>
+									<span class="icon" style="background-color: red;">-</span>
+								</div>
+								
+							</p>
+						</div>
+						<p class="text" style="background-color: #882AA5; border-radius: 1,5%; color: aliceblue;">
+							Sua avaliação deve ser sobre sua experiência em um estabelecimento. Precisamos que ela seja
+							objetiva, clara e detalhista, pois ela será importante para outros consumidores e para o
+							estabelecimento avaliado. Por favor, não coloque dados pessoais sensíveis (nome completo de
+							pessoas envolvidas,CPF, telefone e dados bancários).
+						</p>
+					</div>
+	
+					<div class="accordion-item">
+						<div class="item-header">
+							<h1 class="title">O que devo avaliar?</h1>
+							<span class="icon" style="background-color:green
+							;">x</span>
+						</div>
+	
+						<div class="accordion-ite">
+						  
+							<p class="text">
+								<div class="item-header">
+									<h1 class="title"></h1>
+									<span class="icon" style="background-color: red;">-</span>
+								</div>
+								
+							</p>
+						</div>
+						<p class="text" style="background-color: #882AA5; border-radius: 1,5%; color: aliceblue;">
+							Ao fazer sua avaliação leve em consideração questões sensíveis ao público LGBTQIA+ como sua
+							segurança, permanência, prática ou indução ao preconceito pela comunicação ou ações violentas,
+							constragedoras e intimidadoras.
+						</p>
+					</div>
+	
+					<div class="accordion-item">
+						<div class="item-header">
+							<h1 class="title" >  Por que avaliar?</h1>
+							<div class="icon" style="background-color:green
+							;">x</div>
+							
+						</div>
+						 <div class="accordion-ite">
+						  
+							<p class="text">
+								<div class="item-header">
+									<h1 class="title"></h1>
+									<span class="icon" style="background-color: red;">-</span>
+								</div>
+								
+							</p>
+						</div>
+						<p class="text"                                 style="background-color: #882AA5; border-radius: 1,5%; color: aliceblue;">
+							Queremos colaborar na relação entre o público LGBTQIA+ e os estabelecimentos. Sua avaliação é
+							parte iportante desse processo pois é por meio dela que outros usuários podem conhecer e
+							entender a conduta de cada estabelecimento por em relação as minorias. É também por meio da sua
+							avaliação que os estabelecimentos podem encontrar pontos de melhorias em suas condutas e
+							atendimentos.
+						</p>
+					</div>
+	
+					<div class="accordion-item">
+						<div class="item-header">
+							<h1 class="title">Como funciona o ranking dos estabelecimentos?</h1>
+							<span class="icon" style="background-color:green
+							;">x</span>
+						</div>
+						<div class="accordion-ite">
+						  
+							<p class="text">
+								<div class="item-header">
+									<h1 class="title"></h1>
+									<span class="icon" style="background-color: red;">-</span>
+								</div>
+								
+							</p>
+						</div>
+						<p class="text" style="background-color: #882AA5; border-radius: 1,5%; color: aliceblue;">
+							Os estabelecimentos são rankeados considerando a quantidade de avaliações totais e a porcentagem
+							de avaliações positivas.
+						</p>
+					</div>
+	
+	
+				</div>
+	
+	
+			</section>
+	
+	
+			<section>
+	
+				<h2>O que deve ser denunciado? </h2>
+	
+				<ul>
+					<li>A pratica de qualquer tipo de ação violenta, constrangedora e/ou intimidatória; </li>
+					<li> A proibição da permanência em qualquer ambiente, público ou privado; </li>
+					<li>A pratica de atendimento diferenciado; </li>
+					<li>O veto a hospedagem em hotéis, motéis, pensões ou similares; </li>
+					<li>A inviabilização de locação e compra, de bens móveis ou imóveis;</li>
+					<li>A demissão direta ou indiretamente em função da orientação sexual do empregado;</li>
+					<li> A restrição do acesso ao transportes públicos, incluindo táxis;</li>
+					<li>A negação de ingresso de aluno em estabelecimento público ou privado;</li>
+					<li>A pratica ou indução ao preconceito pelos meios de comunicação;</li>
+				</ul>
+			</section>
+	
+	
+	
+			<section>
+				<h2> Dicas úteis para fazer a denúncia:</h2>
+				<ul>
+					<li>É recomendado fazer o Boletim de Ocorrência;</li>
+					<li>Em caso de agressões físicas, a vítima não deve lavar-se nem trocar de roupa para preservar as
+						provas no Exame de Corpo de Delito. O exame é indispensável nestes casos e é um direito seu que ele
+						seja realizado.</li>
+					<li>Deve-se deixar o local da violência de modo que o local e objetos estejam da forma em que foram
+						encontrados.</li>
+					<li>Converse com as pessoas que testemunharam o caso de violência. Peça o telefone ou, caso haja,
+						oriente um amigo a pegar o contato das pessoas que estavam no local da violência. Elas podem ser
+						importantes testemunhas jurídicas.</li>
+				</ul>
+	
+	
+			</section>
+	
+			<button><a href="https://dedic.pcivil.rj.gov.br/Questionario.aspx">Denuncie</a> </button>
+	
+	
+		</div>
+	
+	
+		<!-- banner part start-->
+	
+		<!--::footer_part end::-->
+	
+		<footer>
+			<img class="logorodape" src="img2/iris_roxo.png" alt=""></img>
+	
+			<div class="mapadosite">
+				<h4> Mapa do Site </h4>
+				<a href="/sobre">
+					<p>Sobre</p>
+				</a>
+				<a href="/manifesto">
+					<p>Manifesto LGBT+</p>
+				</a>
+				<a href="/login">
+					<p>Faça parte</p>
+				</a>
+				<a href="/aplicativo">
+					<p>Como Funciona</p>
+				</a>
+			</div>
+	
+			<div class="social">
+	
+				<img class="social-item" src="img2/facebook.png" alt=""></img>
+				<a href="http://instagram.com/oappiris"> <img class="social-item" src="img2/instagram.png" alt=""></img>
+				</a>
+				<a href="mailto:irisapp.contato@gmail.com"><img class="social-item" src="img2/email_roxo.png" alt=""></img>
+				</a>
+			</div>
+		</footer>
+	
+	
+		<!-- jquery plugins here-->
+		<script src="js/jquery-1.12.1.min.js"></script>
+		<!-- popper js -->
+		<script src="js/popper.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- easing js -->
+		<script src="js/jquery.magnific-popup.js"></script>
+		<!-- swiper js -->
+		<script src="js/swiper.min.js"></script>
+		<!-- swiper js -->
+		<script src="js/masonry.pkgd.js"></script>
+		<!-- particles js -->
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<!-- slick js -->
+		<script src="js/slick.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/jquery.form.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/mail-script.js"></script>
+		<!-- custom js -->
+		<script src="js/custom.js"></script>
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+	
+	
+		<script type="text/javascript">
+			$(".item-header").click(function () {
+				$(".accordion-item").removeClass("active");
+	
+			   
+				$(this).parent().addClass("active");
+	
+				
+				
+				
+	
+			});
+	
+	
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+footer{
+    background-color: #FFDD00 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+   
+  }
+  
+  .logorodape{
+    width: 94px;
+    height: 94px;
+  }
+  
+  .mapadosite a{
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  .social-item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+  
+  .social a{
+    text-decoration: none;
+  }
+ 

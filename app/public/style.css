@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+     }
+    
+    .banner div {
+      flex: 1 1 500px;
+      padding: 10px;
+     } 
+  
+    .banner p{
+      font-size: 36px;
+      line-height: 42px;
+      padding: 10px 0px;
+    }
+  
+    .banner section{
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid #882AA5;
+      box-sizing: border-box; 
+      border-radius: 10px;
+      color: #882AA5;
+      align-items: center;
+      max-width: 400px;
+  }
+  
+    .banner #lojagoogle{
+      width: 74px;
+      height: 76px;
+      padding: 16px;
+    }
+  
+    .banner p{
+    font-size: 30px;
+    }
+    
+   .casallgbt{
+      max-width: 578px;
+      max-height: 336px;
+    } 
+    
+    .banner figure {
+       font-size: 25px;
+    }
+  
+    .legenda {
+      background-color: #FFDD00;
+      border: 2px solid #FFDD00;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 25px;
+      display: flex;
+    }
+     
+
+div .col{
+    background: #882AA5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+   
+    height: 107px;
+    margin: 20px;
+    }
+
+.figer{
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 37px;
+    width: 37px;
+    
+}    
+ figure{
+     padding-top: 3px;
+     font-size: 20px;
+     color: white;
+    text-align: center;
+ }
+
+ /* abarro */
+
+
+ .conteudoHome{
+    display: flex;
+    font-size: 16px;
+   }
+  
+  .acesso{
+    padding: 10px;
+    margin: 38px;
+    font-size: 15px;
+  }
+  
+  .acesso h3{
+    text-align: center;
+  }
+  
+  .acesso button{
+      flex: 1 1 200px;
+      cursor: pointer;
+      border:0px;
+      border-radius: 10px;
+      padding: 15px 10px;
+      width: 300px;
+      border: 2px solid #FFDD00;
+      background-color: #FFFFFF ;
+      font-size: medium;
+    }
+  
+  .avaliacoes{
+    display: flex;
+    align-items: center;
+    
+  }
+  .notas{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .destaques{
+    padding: 5px;
+    margin: 38px;
+    font-size: 15px;
+    width: 800px;
+  }
+  
+  .destaques p{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  a img{
+    width:60px;
+    height: 60px;
+    
+  }
+  img #lojagoogle{
+    width: 60px;
+  }
+  
+
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg,#882AA5,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,rgb(14, 221, 221),#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+.cargo{
+  color: #fff;
+  font-weight: bold;
+}
+  
+  

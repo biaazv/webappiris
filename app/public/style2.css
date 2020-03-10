@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans",sans-serif;
+  box-sizing: border-box;
+}
+
+
+.accordion{
+  max-width: 600px;
+  padding: 10px;
+}
+
+.accordion-item{
+  border-bottom: 1px solid #ddd;
+  padding:  0;
+}
+
+.item-header{
+  padding: px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon{
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 700;
+  line-height: 15px;
+  
+}
+
+.text{
+  color: #fff;
+  padding: 0 6px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion-item.active .text{
+  max-height: 600px;
+  transition: .4s linear;
+}
+
+img .estrela{
+  width: 90px;
+}
